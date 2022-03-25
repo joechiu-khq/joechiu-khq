@@ -23,6 +23,7 @@ Generate CSV reports by azure cli commands.
 
 ## CSV Reports
 CSV reports will be generated into CSV/env and findable as:
+
 <pre>
 CSV
 └── Stage2
