@@ -1,0 +1,20 @@
+
+# key value pairs resolver
+kv() {
+  echo $i | jq -r $1
+}
+# csv echo
+ce() {
+  msg=$1
+  echo $1 | tee -a $csv
+}
+ 
+# join
+function join {
+  local d=${1-} f=${2-}
+  if shift 2
+  then
+    printf %s "$f" "${@/#/$d}"
+  fi
+}
+
